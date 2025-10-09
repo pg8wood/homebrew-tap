@@ -6,6 +6,9 @@ class Slog < Formula
 
   head "https://github.com/pg8wood/slog.git", branch: "main"
 
+  depends_on "cameroncooke/axe/axe"
+  depends_on "jq"
+
   def install
     bin.install "slog"
   end
